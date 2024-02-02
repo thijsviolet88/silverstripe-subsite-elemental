@@ -1,0 +1,29 @@
+.element-editor__element {
+  border-bottom: 1px solid $border-color-light;
+  color: inherit;
+  cursor: pointer;
+  min-height: 8rem;
+  padding: $spacer-sm $panel-padding-x $spacer * 1.5;
+
+  &:focus,
+  &:hover {
+    box-shadow: $z-depth-1;
+    outline-width: 0;
+  }
+
+  &:hover {
+    .element-editor-header__drag-handle {
+      display: block;
+    }
+  }
+
+  &--broken {
+    cursor: default;
+  }
+
+  &--dragging {
+    opacity: 0.3;
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+}

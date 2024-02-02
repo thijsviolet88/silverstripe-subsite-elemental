@@ -1,0 +1,57 @@
+{
+    "name": "dnadesign/silverstripe-elemental",
+    "description": "Elemental pagetype and collection of Elements",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "element",
+        "elemental",
+        "content blocks"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Alexandre Saelens",
+            "email": "alexandre.saelens@dna.co.nz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.1",
+        "silverstripe/framework": "^5",
+        "silverstripe/cms": "^5",
+        "silverstripe/admin": "^2.0.1",
+        "silverstripe/versioned": "^2",
+        "silverstripe/versioned-admin": "^2",
+        "silverstripe/graphql": "^5",
+        "symbiote/silverstripe-gridfieldextensions": "^4",
+        "silverstripe/vendor-plugin": "^2"
+    },
+    "require-dev": {
+      "silverstripe/recipe-testing": "^3",
+      "silverstripe/frameworktest": "^1"
+    },
+    "suggest": {
+        "silverstripe/elemental-blocks": "Adds a set of common SilverStripe content block types",
+        "silverstripe/fulltextsearch": "Adds fulltext search capability for elements using Solr",
+        "dnadesign/silverstripe-elemental-subsites": "Adds subsite support to elemental",
+        "dnadesign/silverstripe-elemental-userforms": "Adds userform support to elemental",
+        "dnadesign/silverstripe-elemental-virtual": "Adds support to share blocks between pages"
+    },
+    "extra": {
+        "expose": [
+            "client/dist",
+            "client/lang"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "DNADesign\\Elemental\\": [
+                "src/",
+                "_legacy/"
+            ],
+            "DNADesign\\Elemental\\Tests\\": "tests/"
+        }
+    }
+}

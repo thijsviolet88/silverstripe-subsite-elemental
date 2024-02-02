@@ -1,0 +1,64 @@
+cs:
+  LeftAndMain_Menu:
+    Hello: Ahoj
+    LOGOUT: 'Odhlásit se'
+  SilverStripe\Subsites\Admin\SubsiteAdmin:
+    MENUTITLE: Subsites
+  SilverStripe\Subsites\Extensions\GroupSubsites:
+    SECURITYTABTITLE: Subsites
+    many_many_Subsites: Subsites
+  SilverStripe\Subsites\Extensions\SiteTreeSubsites:
+    CopyAction: Kopírovat
+  SilverStripe\Subsites\Model\Subsite:
+    ConfigurationTab: Konfigurace
+    CustomExtraMeta: 'Vlastní meta tagy'
+    CustomMetaDescription: Popis
+    CustomMetaKeywords: 'Klíčová slova'
+    CustomMetaTitle: Název
+    PLURALNAME: Subsites
+    SiteConfigSubtitle: 'Slogan Vašeho webu'
+    SiteConfigTitle: 'Název Vašeho webu'
+    ValidateTitle: 'Prosím vložte "Název"'
+    belongs_many_many_Groups: Skupiny
+    db_DefaultSite: 'Výchozí web'
+    db_Language: Jazyk
+    db_Theme: Téma
+    db_Title: Název
+    has_many_Domains: Domény
+  SilverStripe\Subsites\Model\SubsiteDomain:
+    DOMAIN: Doména
+    PLURALNAME: 'Domény webů'
+    SINGULARNAME: 'Doména webu'
+    db_Domain: Doména
+  SilverStripe\Subsites\Reports\SubsiteReportWrapper:
+    ReportDropdown: Weby
+  SiteTreeSubsites:
+    CopyAction: Kopírovat
+  Subsite:
+    CustomExtraMeta: 'Vlastní meta tagy'
+    CustomMetaDescription: Popis
+    CustomMetaKeywords: 'Klíčová slova'
+    CustomMetaTitle: Název
+    DOMAINSAVEFIRST: 'Domény můžete přidávat až po uložení'
+    DomainsHeadline: 'Domény pro tento web'
+    DomainsListTitle: Domény
+    SiteConfigSubtitle: 'Slogan Vašeho webu'
+    SiteConfigTitle: 'Název Vašeho webu'
+    TabTitleConfig: Konfigurace
+    ValidateTitle: 'Prosím vložte "Název"'
+  SubsiteAdmin:
+    MENUTITLE: Subsites
+  SubsiteDomain:
+    DOMAIN: Doména
+    PLURALNAME: 'Domény webů'
+    SINGULARNAME: 'Doména webu'
+  SubsiteReportWrapper:
+    ReportDropdown: Weby
+  Subsites:
+    DefaultSiteFieldLabel: 'Výchozí web'
+    DomainFieldLabel: Doména
+    LanguageFieldLabel: Jazyk
+    ThemeFieldLabel: Téma
+    TitleFieldLabel: 'Název subsite'
+  SubsitesVirtualPage:
+    PLURALNAME: 'Základní stránky'

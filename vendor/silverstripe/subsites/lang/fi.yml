@@ -1,0 +1,92 @@
+fi:
+  DomainNameField:
+    INVALID_DOMAIN: 'Virheellinen domain-nimi'
+  SilverStripe\CMS\Model\VirtualPage:
+    EDITCONTENT: 'Napsauta tässä muokataksesi sisältöä'
+  SilverStripe\Subsites\Admin\SubsiteAdmin:
+    MENUTITLE: Alasivustot
+  SilverStripe\Subsites\Extensions\FileSubsites:
+    has_one_Subsite: Alasivusto
+  SilverStripe\Subsites\Extensions\FolderFormFactoryExtension:
+    AllSitesDropdownOpt: 'Kaikki sivustot'
+    SUBSITENOTICE: 'Kansiot ja tiedostot, jotka on luotu pääsivustolla, ovat käytettävissä kaikissa alisivustoissa.'
+    SubsiteFieldLabel: Alasivusto
+  SilverStripe\Subsites\Extensions\GroupSubsites:
+    ACCESSALL: 'Kaikki alasivustot'
+    ACCESSONLY: 'Vain nämä alasivustot'
+    ACCESSRADIOTITLE: 'Anna ryhmän oikeudet »'
+    GlobalGroup: Globaaliryhmä
+    MANAGE_SUBSITES: 'Hallinnoi ryhmien alasivustoja'
+    MANAGE_SUBSITES_HELP: 'Mahdollisuus rajoittaa ryhmän oikeuksia yhdelle tai useammalle alisivustolle.'
+    SECURITYTABTITLE: Alasivustot
+    many_many_Subsites: Alasivut
+  SilverStripe\Subsites\Extensions\LeftAndMainSubsites:
+    SITECONTENTLEFT: 'Sivuston sisältö'
+    Saved: 'Tallennettu, ole hyvä ja päivitä liittyvät sivut.'
+  SilverStripe\Subsites\Extensions\SiteConfigSubsites:
+    has_one_Subsite: Alasivusto
+  SilverStripe\Subsites\Extensions\SiteTreeSubsites:
+    CopyAction: Kopioi
+    CopyToSubsite: 'Kopioi sivu alasivustolle'
+    CopyToSubsiteWithChildren: 'Sisällytä alasivut?'
+    SubsiteOperations: 'Alasivuston toiminnot'
+    has_one_Subsite: Alasivusto
+  SilverStripe\Subsites\Model\Subsite:
+    ConfigurationTab: Asetukset
+    CopyMessage: 'Luotiin kopio lähteestä {title}'
+    CustomExtraMeta: 'Omat meta-tagit'
+    CustomMetaDescription: Kuvaus
+    CustomMetaKeywords: Avainsanat
+    CustomMetaTitle: Otsikko
+    PLURALNAME: Alasivut
+    PLURALS:
+      one: Alasivu
+      other: '{count} alasivua'
+    PageTypeBlacklistField: 'Kiellä sivutyyppien käyttö?'
+    SINGULARNAME: Alasivusto
+    SiteConfigSubtitle: 'Tähän sloganisi'
+    SiteConfigTitle: 'Sivuston nimi'
+    ValidateTitle: 'Lisää "Otsikko"'
+    belongs_many_many_Groups: Ryhmät
+    db_DefaultSite: Oletussivusto
+    db_Language: Kieli
+    db_RedirectURL: 'Edelleenohjaus URL'
+    db_Theme: Teema
+    db_Title: Otsikko
+    has_many_Domains: Domainit
+  SilverStripe\Subsites\Model\SubsiteDomain:
+    DOMAIN: Verkkotunnus
+    DOMAIN_DESCRIPTION: 'Tämä alisivuston isäntänimi (ilman protokollaa). Sallii wildcard-merkit (*).'
+    ISPRIMARY_DESCRIPTION: 'Merkitse tämä oletusdomainiksi tälle alisivustolle'
+    IS_PRIMARY: 'On päädomain?'
+    PLURALNAME: 'Alisivuston domain-osoitteet'
+    PROTOCOL_AUTOMATIC: Automaattinen
+    PROTOCOL_HTTP: 'http://'
+    PROTOCOL_HTTPS: 'https://'
+    Protocol: Protokolla
+    SINGULARNAME: 'Alisivuston domain-osoite'
+    db_Domain: Verkkotunnus
+    db_Protocol: Protokolla
+    has_one_Subsite: Alasivusto
+  SilverStripe\Subsites\Pages\SubsitesVirtualPage:
+    DESCRIPTION: 'Näyttää sisällön toisen alisivuston sivulta'
+    PLURALNAME: 'Alisivustojen virtuaaliset sivut'
+    SINGULARNAME: 'Alisivuston Virtuaalisivu'
+    SubsiteField: Alasivusto
+  SilverStripe\Subsites\Reports\SubsiteReportWrapper:
+    ReportDropdown: Sivustot
+    ReportDropdownSubsite: Alasivusto
+  Subsite:
+    COPYSTRUCTURE: 'Kopioi rakenne kohteesta:'
+    NOTEMPLATE: 'Ei sivupohjaa'
+  Subsites:
+    DefaultSiteFieldLabel: Oletussivusto
+    DomainFieldLabel: Domain
+    IsPublicFieldLabel: 'Aktivoi julkinen pääsy'
+    LanguageFieldLabel: Kieli
+    MainSiteTitle: Pääsivusto
+    PageTypeBlacklistFieldLabel: 'Sivutyyppien mustalista'
+    PrimaryDomainFieldLabel: Oletusdomain
+    RedirectURLFieldLabel: 'Edelleenohjaus URL'
+    ThemeFieldLabel: Teema
+    TitleFieldLabel: 'Alisivuston nimi'

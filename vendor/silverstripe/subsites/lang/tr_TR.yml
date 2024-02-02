@@ -1,0 +1,50 @@
+tr_TR:
+  GridFieldAddFromTemplateButton:
+    AddFromTemplate: 'Add New from Template'
+  GroupSubsites:
+    ACCESSALL: 'All subsites'
+    ACCESSONLY: 'Only these subsites'
+    ACCESSRADIOTITLE: 'Give this group access to'
+    SECURITYTABTITLE: 'Alt Siteler'
+  SilverStripe\CMS\Model\VirtualPage:
+    EDITCONTENT: 'İçeriği düzenlemek için tıklayınız'
+  SilverStripe\Subsites\Admin\SubsiteAdmin:
+    MENUTITLE: 'Alt Siteler'
+  SilverStripe\Subsites\Extensions\FileSubsites:
+    has_one_Subsite: 'Alt Site'
+  SilverStripe\Subsites\Extensions\FolderFormFactoryExtension:
+    SubsiteFieldLabel: 'Alt Site'
+  SilverStripe\Subsites\Extensions\GroupSubsites:
+    ACCESSALL: 'All subsites'
+    ACCESSONLY: 'Only these subsites'
+    ACCESSRADIOTITLE: 'Give this group access to'
+    SECURITYTABTITLE: 'Alt Siteler'
+    many_many_Subsites: 'Alt Siteler'
+  SilverStripe\Subsites\Extensions\SiteConfigSubsites:
+    has_one_Subsite: 'Alt Site'
+  SilverStripe\Subsites\Extensions\SiteTreeSubsites:
+    has_one_Subsite: 'Alt Site'
+  SilverStripe\Subsites\Model\Subsite:
+    PLURALNAME: 'Alt Siteler'
+    SINGULARNAME: 'Alt Site'
+  SilverStripe\Subsites\Model\SubsiteDomain:
+    DOMAIN: Domain
+    PLURALNAME: 'Subsite Domains'
+    SINGULARNAME: 'Subsite Domain'
+    db_Domain: Domain
+    has_one_Subsite: 'Alt Site'
+  SilverStripe\Subsites\Pages\SubsitesVirtualPage:
+    SINGULARNAME: 'Alt Site Sanal Sayfa'
+    SubsiteField: 'Alt Site'
+  SilverStripe\Subsites\Reports\SubsiteReportWrapper:
+    ReportDropdownSubsite: 'Alt Site'
+  SubsiteAdmin:
+    MENUTITLE: 'Alt Siteler'
+  SubsiteDomain:
+    DOMAIN: Domain
+    PLURALNAME: 'Subsite Domains'
+    SINGULARNAME: 'Subsite Domain'
+  Subsites:
+    DomainFieldLabel: Domain
+  SubsitesVirtualPage:
+    SINGULARNAME: 'Alt Site Sanal Sayfa'

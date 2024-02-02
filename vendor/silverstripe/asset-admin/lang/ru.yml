@@ -1,0 +1,18 @@
+ru:
+  SilverStripe\AssetAdmin\Controller\AssetAdmin:
+    BACKLINKCOUNT: 'Используется на:'
+    HEIGHT: Высота
+    MENUTITLE: Файлы
+    PAGES: страниц(а)
+    SIZE: Размер
+    TYPE: Тип
+    URL: URL
+    WIDTH: Ширина
+  SilverStripe\AssetAdmin\Forms\FolderFormFactory:
+    FOLDERNAME: 'Имя директории'
+  SilverStripe\AssetAdmin\Forms\UploadField:
+    Dimensions: Размеры
+    EDIT: Редактировать
+    EDITINFO: 'Редактировать этот файл'
+    FIELDNOTSET: 'Информация о файле не найдена'
+    REMOVE: Удалить

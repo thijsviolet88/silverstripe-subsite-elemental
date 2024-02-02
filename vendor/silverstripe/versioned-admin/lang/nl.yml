@@ -1,0 +1,25 @@
+nl:
+  SilverStripe\VersionedAdmin\ArchiveAdmin:
+    COLUMN_ARCHIVEDBY: 'Gearchiveerd door'
+    COLUMN_DATEARCHIVED: Archiefdatum
+    COLUMN_ORIGIN: Oorsprong
+    COLUMN_TITLE: Titel
+    COLUMN_TYPE: Type
+    MENUTITLE: Archief
+    SELECT_EMPTY: Selecteer...
+    SELECT_TYPE: 'Selecteer type'
+    TAB_OTHERS: Andere
+  SilverStripe\VersionedAdmin\Controllers\CMSPageHistoryViewerController:
+    MENUTITLE: 'Bewerk pagina'
+  SilverStripe\VersionedAdmin\Controllers\HistoryViewerController:
+    ErrorItemViewPermissionDenied: 'Je hebt geen toestemming om {ObjectTitle} te bekijken.'
+    MENUTITLE: Geschiedenis
+  SilverStripe\VersionedAdmin\Forms\DiffField:
+    NO_DIFF_AVAILABLE: 'Geen vergelijking'
+  SilverStripe\VersionedAdmin\Navigator\SilverStripeNavigatorItem_LiveLink:
+    TITLE: 'Gepubliceerd '
+  SilverStripe\Versioned\RestoreAction:
+    RESTORE: 'Herstel naar concept'
+    RESTORE_DESC: 'Het de gearchiveerde versie naar concept'
+    RESTORE_TO_ROOT: 'Herstel naar concept in hoofdmenu'
+    RESTORE_TO_ROOT_DESC: 'Herstel de gearchiveerde versie naar concept in hoofdmenu'

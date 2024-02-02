@@ -1,0 +1,16 @@
+sr:
+  SilverStripe\AssetAdmin\Controller\AssetAdmin:
+    BACKLINKCOUNT: 'Користи се на:'
+    MENUTITLE: Датотеке
+    PAGES: страници(а)
+    SIZE: Величина
+    TYPE: Тип
+    URL: URL
+  SilverStripe\AssetAdmin\Forms\FolderFormFactory:
+    FOLDERNAME: 'Име фасцикле'
+  SilverStripe\AssetAdmin\Forms\UploadField:
+    Dimensions: Димензије
+    EDIT: Измени
+    EDITINFO: 'Измени ову датотеку'
+    FIELDNOTSET: 'Информације о датотеци нису пронађене'
+    REMOVE: Уклони

@@ -1,0 +1,56 @@
+pl_PL:
+  GridFieldAddFromTemplateButton:
+    AddFromTemplate: 'Dodaj nową na podstawie szablonu'
+  GroupSubsites:
+    ACCESSALL: 'Wszystkie podwitryny'
+    ACCESSONLY: 'Tylko te podwitryny'
+    ACCESSRADIOTITLE: 'Daj tej grupie dostęp do'
+    SECURITYTABTITLE: Podwitryny
+  SilverStripe\CMS\Model\VirtualPage:
+    EDITCONTENT: 'Kliknij tutaj aby edytować zawartość'
+  SilverStripe\Subsites\Admin\SubsiteAdmin:
+    MENUTITLE: Podwitryny
+  SilverStripe\Subsites\Extensions\FileSubsites:
+    has_one_Subsite: Podwitryna
+  SilverStripe\Subsites\Extensions\FolderFormFactoryExtension:
+    SubsiteFieldLabel: Podwitryna
+  SilverStripe\Subsites\Extensions\GroupSubsites:
+    ACCESSALL: 'Wszystkie podwitryny'
+    ACCESSONLY: 'Tylko te podwitryny'
+    ACCESSRADIOTITLE: 'Daj tej grupie dostęp do'
+    SECURITYTABTITLE: Podwitryny
+    many_many_Subsites: Podwitryny
+  SilverStripe\Subsites\Extensions\SiteConfigSubsites:
+    has_one_Subsite: Podwitryna
+  SilverStripe\Subsites\Extensions\SiteTreeSubsites:
+    has_one_Subsite: Podwitryna
+  SilverStripe\Subsites\Model\Subsite:
+    ConfigurationTab: Konfiguracja
+    CustomExtraMeta: 'Własne meta tagi'
+    CustomMetaTitle: Tytuł
+    PLURALNAME: Podwitryny
+    SINGULARNAME: Podwitryna
+    db_Language: Język
+    db_Title: Tytuł
+  SilverStripe\Subsites\Model\SubsiteDomain:
+    DOMAIN: Domena
+    PLURALNAME: 'Domeny podwitryny'
+    SINGULARNAME: 'Domena podwitryny'
+    db_Domain: Domena
+    has_one_Subsite: Podwitryna
+  SilverStripe\Subsites\Pages\SubsitesVirtualPage:
+    SINGULARNAME: 'Wirtualna strona dla podwitryn'
+    SubsiteField: Podwitryna
+  SilverStripe\Subsites\Reports\SubsiteReportWrapper:
+    ReportDropdownSubsite: Podwitryna
+  SubsiteAdmin:
+    MENUTITLE: Podwitryny
+  SubsiteDomain:
+    DOMAIN: Domena
+    PLURALNAME: 'Domeny podwitryny'
+    SINGULARNAME: 'Domena podwitryny'
+  Subsites:
+    DomainFieldLabel: Domena
+    LanguageFieldLabel: Język
+  SubsitesVirtualPage:
+    SINGULARNAME: 'Wirtualna strona dla podwitryn'

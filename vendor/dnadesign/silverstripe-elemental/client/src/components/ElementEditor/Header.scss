@@ -1,0 +1,105 @@
+.element-editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 0 $spacer-xs;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &--none {
+      font-style: italic;
+      color: lighten($body-color, 20);
+    }
+  }
+
+  &__info,
+  &__actions {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  &__info {
+    max-width: calc(100% - 60px);
+  }
+
+  &__actions {
+    justify-content: flex-end;
+  }
+
+  &__actions-toggle {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  &__icon-container {
+    margin-left: -2px;
+    color: $text-muted;
+    font-size: 2.154rem;
+    height: 28px;
+    line-height: 1.5rem;
+
+    &--broken {
+      color: $red;
+    }
+  }
+
+  &__expand {
+    font-size: 1.1rem;
+    margin-left: 3px;
+    width: unset;
+  }
+
+  // Draft/modified state icons copied from asset-admin - see GalleryItem.scss
+  &__version-state {
+    border: 1px solid $state-draft;
+    border-radius: 100%;
+    bottom: 6px;
+    box-shadow: 0 0 1px .5px $white;
+    display: block;
+    height: 8px;
+    left: 22px;
+    position: relative;
+    width: 8px;
+    z-index: 1;
+
+    &--unsaved {
+      background-color: $link-color;
+      border: 1px solid $link-hover-color;
+    }
+
+    &--draft {
+      background-color: $state-draft-bg;
+    }
+
+    &--modified {
+      background-color: $state-modified-bg;
+    }
+  }
+
+  &__drag-handle {
+    display: none;
+    position: absolute;
+    left: 5px;
+    cursor: grab;
+    cursor: -webkit-grab;
+  }
+
+  &--simple &__drag-handle {
+    display: block;
+  }
+
+  &--simple &__info {
+    width: 460px;
+  }
+
+  .dropdown-item.active {
+    cursor: default;
+  }
+}

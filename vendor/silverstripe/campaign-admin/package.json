@@ -1,0 +1,90 @@
+{
+  "name": "silverstripe-campaign-admin",
+  "version": "2.0.0",
+  "description": "SilverStripe campaign admin interface",
+  "directories": {
+    "test": "tests"
+  },
+  "engines": {
+    "node": "^18.x"
+  },
+  "scripts": {
+    "build": "yarn && yarn lint && yarn test && rm -rf client/dist/* && NODE_ENV=production webpack --mode production --bail --progress",
+    "dev": "NODE_ENV=development webpack --progress",
+    "watch": "yarn && NODE_ENV=development webpack --watch --progress",
+    "css": "yarn && WEBPACK_CHILD=css webpack -p --bail --progress",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "lint": "eslint client/src && sass-lint -v client/src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/silverstripe/silverstripe-campaign-admin.git"
+  },
+  "keywords": [
+    "silverstripe",
+    "admin"
+  ],
+  "author": "SilverStripe Ltd",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/silverstripe/silverstripe-campaign-admin/issues"
+  },
+  "homepage": "https://github.com/silverstripe/silverstripe-campaign-admin",
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^4.6.2",
+    "classnames": "^2.3.2",
+    "core-js": "^3.26.0",
+    "deep-freeze-strict": "^1.1.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.3",
+    "reactstrap": "^8.9.0",
+    "redux": "^4.2.0",
+    "redux-form": "^8.3.8",
+    "redux-mock-store": "^1.5.4",
+    "redux-thunk": "^2.4.2"
+  },
+  "devDependencies": {
+    "@silverstripe/eslint-config": "^1.1.0",
+    "@silverstripe/webpack-config": "^2.0.0",
+    "@testing-library/react": "^14.0.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^29.3.0",
+    "babel-loader": "^9.1.0",
+    "jest-cli": "^29.3.0",
+    "jest-environment-jsdom": "^29.3.1",
+    "toposort": "^2.0.2",
+    "validator": "^13.7.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "resolutions": {
+    "colors": "1.4.0"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "jest": {
+    "testEnvironment": "jsdom",
+    "roots": [
+      "client/src"
+    ],
+    "modulePaths": [
+      "client/src",
+      "../admin/client/src",
+      "../admin/node_modules",
+      "vendor/silverstripe/admin/client/src",
+      "vendor/silverstripe/admin/node_modules"
+    ],
+    "testMatch": [
+      "**/tests/**/*-test.js?(x)"
+    ],
+    "transform": {
+      ".*": "babel-jest"
+    }
+  }
+}

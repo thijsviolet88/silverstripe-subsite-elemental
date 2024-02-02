@@ -1,0 +1,18 @@
+---
+Name: graphql-filters
+---
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\GraphQL\Schema\DataObject\Plugin\QueryFilter\FilterRegistryInterface:
+    class: SilverStripe\GraphQL\Schema\DataObject\Plugin\QueryFilter\FieldFilterRegistry
+    constructor:
+      contains: '%$SilverStripe\GraphQL\Schema\DataObject\Plugin\QueryFilter\Filters\ContainsFilter'
+      eq: '%$SilverStripe\GraphQL\Schema\DataObject\Plugin\QueryFilter\Filters\EqualToFilter'
+      ne: '%$SilverStripe\GraphQL\Schema\DataObject\Plugin\QueryFilter\Filters\NotEqualFilter'
+      gt: '%$SilverStripe\GraphQL\Schema\DataObject\Plugin\QueryFilter\Filters\GreaterThanFilter'
+      lt: '%$SilverStripe\GraphQL\Schema\DataObject\Plugin\QueryFilter\Filters\LessThanFilter'
+      gte: '%$SilverStripe\GraphQL\Schema\DataObject\Plugin\QueryFilter\Filters\GreaterThanOrEqualFilter'
+      lte: '%$SilverStripe\GraphQL\Schema\DataObject\Plugin\QueryFilter\Filters\LessThanOrEqualFilter'
+      in: '%$SilverStripe\GraphQL\Schema\DataObject\Plugin\QueryFilter\Filters\InFilter'
+      endswith: '%$SilverStripe\GraphQL\Schema\DataObject\Plugin\QueryFilter\Filters\EndsWithFilter'
+      startswith: '%$SilverStripe\GraphQL\Schema\DataObject\Plugin\QueryFilter\Filters\StartsWithFilter'
+

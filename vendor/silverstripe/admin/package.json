@@ -1,0 +1,150 @@
+{
+  "name": "silverstripe-admin",
+  "version": "5.0.0",
+  "description": "SilverStripe admin interface",
+  "directories": {
+    "test": "tests"
+  },
+  "bin": {
+    "webpack": "./node_modules/webpack/webpack.js"
+  },
+  "engines": {
+    "node": "^18.x"
+  },
+  "scripts": {
+    "build": "yarn && yarn lint && yarn test && rm -rf client/dist/* && NODE_ENV=production webpack --mode production --bail --progress",
+    "dev": "NODE_ENV=development webpack --progress",
+    "watch": "NODE_ENV=development webpack --watch --progress",
+    "css": "WEBPACK_CHILD=css npm run build",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "lint": "eslint client/src && sass-lint -v",
+    "js-fix": "eslint client/src --fix",
+    "pattern-lib": "storybook dev -p 6006",
+    "static-pattern-lib": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/silverstripe/silverstripe-admin.git"
+  },
+  "keywords": [
+    "silverstripe",
+    "admin"
+  ],
+  "author": "SilverStripe Ltd",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/silverstripe/silverstripe-admin/issues"
+  },
+  "homepage": "https://github.com/silverstripe/silverstripe-admin",
+  "dependencies": {
+    "@apollo/client": "^3.7.1",
+    "@emotion/styled": "^11.10.5",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^4.6.2",
+    "chosen-js": "^1.8.7",
+    "classnames": "^2.3.2",
+    "core-js": "^3.26.0",
+    "debounce-promise": "^3.1.2",
+    "deep-equal": "^2.0.5",
+    "deep-freeze-strict": "^1.1.1",
+    "detect-browser": "^5.3.0",
+    "es6-promise": "^4.2.8",
+    "events-polyfill": "^2.1.2",
+    "graphql": "^16.6.0",
+    "graphql-fragments": "^0.1.0",
+    "graphql-tag": "^2.12.6",
+    "isomorphic-fetch": "^3.0.0",
+    "jquery": "^3.6.1",
+    "jquery-form": "^4.3.0",
+    "jquery-sizes": "^0.33.0",
+    "lodash.debounce": "^4.0.8",
+    "lodash.escaperegexp": "^4.1.2",
+    "merge": "^2.1.1",
+    "modernizr": "^3.12.0",
+    "moment": "^2.29.4",
+    "page.js": "^4.13.3",
+    "prop-types": "^15.8.1",
+    "qs": "^6.11.0",
+    "react": "^18.2.0",
+    "react-dnd": "^5.0.0",
+    "react-dnd-html5-backend": "^5.0.1",
+    "react-dom": "^18.2.0",
+    "react-load-script": "^0.0.6",
+    "react-redux": "^8.0.4",
+    "react-router": "^6.7",
+    "react-router-dom": "^6.7",
+    "react-select": "^5.5.8",
+    "reactstrap": "^8.9.0",
+    "redux": "^4.2.0",
+    "redux-form": "^8.3.8",
+    "redux-thunk": "^2.4.1",
+    "remove-files-webpack-plugin": "^1.5.0",
+    "resize-observer-polyfill": "^1.5.1",
+    "tinymce": "^6.2.0",
+    "toposort": "^2.0.2",
+    "url": "^0.11.0",
+    "uuid": "^9.0.0",
+    "validator": "^13.7.0",
+    "webpack-sources": "^3.2.3"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.20.0",
+    "@silverstripe/eslint-config": "^1.1.0",
+    "@silverstripe/webpack-config": "^2.0.0",
+    "@storybook/addon-actions": "^7.0.18",
+    "@storybook/addon-controls": "^7.0.18",
+    "@storybook/addon-essentials": "^7.0.18",
+    "@storybook/addon-interactions": "^7.0.18",
+    "@storybook/addon-links": "^7.0.18",
+    "@storybook/addons": "^7.0.18",
+    "@storybook/blocks": "^7.0.18",
+    "@storybook/react": "^7.0.18",
+    "@storybook/react-webpack5": "^7.0.18",
+    "@storybook/testing-library": "^0.1.0",
+    "@testing-library/react": "^14.0.0",
+    "babel-jest": "^29.2.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "fast-glob": "^3.2.12",
+    "html-loader": "^4.2.0",
+    "is-plain-object": "^5.0.0",
+    "jest-cli": "^29.2.2",
+    "jest-environment-jsdom": "^29.3.1",
+    "markdown-loader": "^8.0.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-dir": "^0.1.17",
+    "storybook": "^7.0.18",
+    "storybook-addon-jsx": "^7.3.14",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "resolutions": {
+    "colors": "1.4.0"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "jest": {
+    "testEnvironment": "jsdom",
+    "roots": [
+      "client/src"
+    ],
+    "moduleDirectories": [
+      "client/src",
+      "node_modules",
+      "node_modules/@silverstripe/webpack-config/node_modules"
+    ],
+    "testMatch": [
+      "**/tests/**/*-test.js?(x)"
+    ],
+    "transform": {
+      ".*": "babel-jest"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
+}

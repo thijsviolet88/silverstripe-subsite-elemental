@@ -1,0 +1,48 @@
+{
+    "name": "silverstripe/reports",
+    "type": "silverstripe-vendormodule",
+    "description": "Reports module for SilverStripe CMS",
+    "homepage": "http://silverstripe.org",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "silverstripe",
+        "cms",
+        "reports"
+    ],
+    "authors": [
+        {
+            "name": "SilverStripe",
+            "homepage": "http://silverstripe.com"
+        },
+        {
+            "name": "The SilverStripe Community",
+            "homepage": "http://silverstripe.org"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "silverstripe/framework": "^5",
+        "silverstripe/admin": "^2",
+        "silverstripe/versioned": "^2",
+        "silverstripe/config": "^2",
+        "silverstripe/assets": "^2",
+        "silverstripe/vendor-plugin": "^2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "extra": {
+        "expose": [
+            "javascript"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "SilverStripe\\Reports\\": "code/",
+            "SilverStripe\\Reports\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

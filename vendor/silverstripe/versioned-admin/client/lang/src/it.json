@@ -1,0 +1,21 @@
+{
+    "HistoryViewer.Author": "Autore",
+    "HistoryViewer.BadgeLive": "Live",
+    "HistoryViewer.COMPARE_MODE": "Modalità comparazione",
+    "HistoryViewer.EXIT": "Uscita",
+    "HistoryViewer.NEXT": "Prossimo",
+    "HistoryViewer.PREVIOUS": "Precedente",
+    "HistoryViewer.Published": "Pubblicato",
+    "HistoryViewer.Record": "Record",
+    "HistoryViewer.SELECT_PROMPT": "Selezionare due versioni",
+    "HistoryViewer.Saved": "Salvato",
+    "HistoryViewerHeading.COMPARE_VERSIONS": "Comparare due versioni",
+    "HistoryViewerToolbar.REVERTED_MESSAGE": "Versione %s ripristinata con successo",
+    "HistoryViewerToolbar.REVERT_TO_VERSION": "Ripristinare a questa versione",
+    "HistoryViewerToolbar.REVERT_UNAVAILABLE": "Non disponibile nella versione corrente",
+    "HistoryViewerVersion.CLOSE": "Chiudi",
+    "HistoryViewerVersion.COMPARE": "Comparare",
+    "HistoryViewerVersion.GO_TO_VERSION": "Andare alla versione {version}",
+    "HistoryViewerVersion.SELECTED": "Già selezionato",
+    "HistoryViewerVersionList.CLOSE": "Chiudi"
+}

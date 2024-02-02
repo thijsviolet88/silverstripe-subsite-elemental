@@ -1,0 +1,18 @@
+sv:
+  SilverStripe\AssetAdmin\Controller\AssetAdmin:
+    BACKLINKCOUNT: 'Använd på:'
+    HEIGHT: Höjd
+    MENUTITLE: Filer
+    PAGES: sida(-or)
+    SIZE: Filstorlek
+    TYPE: Filtyp
+    URL: URL
+    WIDTH: Bredd
+  SilverStripe\AssetAdmin\Forms\FolderFormFactory:
+    FOLDERNAME: Mappnamn
+  SilverStripe\AssetAdmin\Forms\UploadField:
+    Dimensions: Dimensioner
+    EDIT: Ändra
+    EDITINFO: 'Redigera filen'
+    FIELDNOTSET: 'Hittade ingen filinformation'
+    REMOVE: 'Ta bort'

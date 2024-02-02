@@ -1,0 +1,21 @@
+{
+    "HistoryViewer.Author": "Aŭtoro",
+    "HistoryViewer.BadgeLive": "Realtempa",
+    "HistoryViewer.COMPARE_MODE": "Kompari reĝimon",
+    "HistoryViewer.EXIT": "Eliri",
+    "HistoryViewer.NEXT": "Sekva",
+    "HistoryViewer.PREVIOUS": "Antaŭa",
+    "HistoryViewer.Published": "Publikigis",
+    "HistoryViewer.Record": "Registri",
+    "HistoryViewer.SELECT_PROMPT": "Elekti du versiojn",
+    "HistoryViewer.Saved": "Konservita",
+    "HistoryViewerHeading.COMPARE_VERSIONS": "Kompari du versiojn",
+    "HistoryViewerToolbar.REVERTED_MESSAGE": "Sukcesis malfari ĝis versio 1%s",
+    "HistoryViewerToolbar.REVERT_TO_VERSION": "Malfari al ĉi tiu versio",
+    "HistoryViewerToolbar.REVERT_UNAVAILABLE": "Nehavebla por la aktuala versio",
+    "HistoryViewerVersion.CLOSE": "Fermi",
+    "HistoryViewerVersion.COMPARE": "Kompari",
+    "HistoryViewerVersion.GO_TO_VERSION": "Iru al versio {version}",
+    "HistoryViewerVersion.SELECTED": "Jam elektita",
+    "HistoryViewerVersionList.CLOSE": "Fermi"
+}

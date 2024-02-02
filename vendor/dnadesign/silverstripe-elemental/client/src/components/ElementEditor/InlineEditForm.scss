@@ -1,0 +1,28 @@
+.element-editor-editform {
+  margin-top: $spacer-xs;
+  cursor: auto;
+
+  // Counteract the margin that is added to the bottom of each form group
+  margin-bottom: -1rem;
+
+  // Force tinymce to have proper box-sizing
+  .mce-tinymce {
+    box-sizing: border-box;
+  }
+
+  // The form div itself receives some width styling that we prefer to be handled by
+  // field holder styling as below
+  &__form {
+    width: 100%;
+  }
+
+  // Specificity overrides for styles provided by admin.
+  // Designs mandate that we're going with a "stacked" style here which doesn't currently
+  // translate very well to higher width
+  & &__form {
+    & .form-group .form__field-holder {
+      flex: 1 0 100%;
+      max-width: 900px;
+    }
+  }
+}

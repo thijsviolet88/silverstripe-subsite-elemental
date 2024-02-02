@@ -1,0 +1,7 @@
+ko:
+  SilverStripe\AssetAdmin\Controller\AssetAdmin:
+    BACKLINKCOUNT: '다음에서 사용중 '
+    MENUTITLE: 파일
+    PAGES: 페이지
+  SilverStripe\AssetAdmin\Forms\FolderFormFactory:
+    FOLDERNAME: '폴더 이름'

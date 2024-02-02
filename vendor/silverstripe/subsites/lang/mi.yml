@@ -1,0 +1,76 @@
+mi:
+  SilverStripe\CMS\Model\VirtualPage:
+    EDITCONTENT: 'Pāwhiri ki konei hei whakatika i ngā ihirangi'
+  SilverStripe\Subsites\Admin\SubsiteAdmin:
+    MENUTITLE: 'Ngā pae iti'
+  SilverStripe\Subsites\Extensions\FileSubsites:
+    has_one_Subsite: 'Pae iti'
+  SilverStripe\Subsites\Extensions\FolderFormFactoryExtension:
+    AllSitesDropdownOpt: 'Ngā pae katoa'
+    SUBSITENOTICE: 'Ka taea ngā kōpaki me ngā kōnae kua hangaia i te pae matua te uru mā ngā pae iti katoa.'
+    SubsiteFieldLabel: 'Pae iti'
+  SilverStripe\Subsites\Extensions\GroupSubsites:
+    ACCESSALL: 'Ngā pae iti katoa'
+    ACCESSONLY: 'Ko ēnei pae iti anake'
+    ACCESSRADIOTITLE: 'Tukuna tēnei rōpū kia uru ki'
+    GlobalGroup: 'Rōpū Hurinoa'
+    MANAGE_SUBSITES: 'Whakahaere pae iti mō ngā rōpū'
+    MANAGE_SUBSITES_HELP: 'Te āheinga ki te whakawhāiti whakaaetanga mō tētahi rōpū ki tētahi neke atu rānei o ngā pae iti.'
+    SECURITYTABTITLE: 'Ngā pae iti'
+    many_many_Subsites: 'Ngā pae iti'
+  SilverStripe\Subsites\Extensions\LeftAndMainSubsites:
+    Saved: 'Kua tiakina, whakahoutia ngā whārangi pāhono.'
+  SilverStripe\Subsites\Extensions\SiteConfigSubsites:
+    has_one_Subsite: 'Pae iti'
+  SilverStripe\Subsites\Extensions\SiteTreeSubsites:
+    CopyAction: Tārua
+    CopyToSubsite: 'Tāruatia te whārangi ki te pae iti'
+    has_one_Subsite: 'Pae iti'
+  SilverStripe\Subsites\Model\Subsite:
+    ConfigurationTab: Whirihoranga
+    CopyMessage: 'I hangaia he tārua o {title}'
+    CustomExtraMeta: 'Ngā Tūtohu Meta Ritenga'
+    CustomMetaDescription: Whakaahuatanga
+    CustomMetaKeywords: 'Ngā kupumatua'
+    CustomMetaTitle: Taitara
+    PLURALNAME: 'Ngā pae iti'
+    PageTypeBlacklistField: 'Me whakakāhore ngā momo whārangi?'
+    SINGULARNAME: 'Pae iti'
+    SiteConfigSubtitle: 'Tō rārangi tautuhinga ki konei'
+    SiteConfigTitle: 'Tō Ingoa Pae'
+    ValidateTitle: 'Tāurua he "Taitara"'
+    belongs_many_many_Groups: 'Ngā Rōpū'
+    db_DefaultSite: 'Pae taunoa'
+    db_Language: Reo
+    db_RedirectURL: 'Tukua anō te URL'
+    db_Theme: Kaupapa
+    db_Title: Taitara
+    has_many_Domains: 'Ngā Rohe'
+  SilverStripe\Subsites\Model\SubsiteDomain:
+    DOMAIN: Rohe
+    PLURALNAME: 'Ngā Rohe Pae Iti'
+    SINGULARNAME: 'Rohe Pae Iti'
+    db_Domain: Rohe
+    has_one_Subsite: 'Pae iti'
+  SilverStripe\Subsites\Pages\SubsitesVirtualPage:
+    DESCRIPTION: 'Ka whakaatu i ngā ihirangi o tētahi whārangi ki tētahi atu pae iti'
+    PLURALNAME: 'Ngā Whārangi Taketake'
+    SINGULARNAME: 'Whārangi Mariko Pae Iti'
+    SubsiteField: 'Pae iti'
+  SilverStripe\Subsites\Reports\SubsiteReportWrapper:
+    ReportDropdown: 'Ngā Pae'
+    ReportDropdownSubsite: 'Pae iti'
+  Subsite:
+    COPYSTRUCTURE: 'Tāurutia te hanganga mai i:'
+    NOTEMPLATE: 'Kāore he tātauira'
+  Subsites:
+    DefaultSiteFieldLabel: 'Pae taunoa'
+    DomainFieldLabel: Rohe
+    IsPublicFieldLabel: 'Whakahohe urunga tūmatatanui'
+    LanguageFieldLabel: Reo
+    MainSiteTitle: 'Pae matua'
+    PageTypeBlacklistFieldLabel: 'Rārangirāhui Momo Whārangi'
+    PrimaryDomainFieldLabel: 'Rohe Matua'
+    RedirectURLFieldLabel: 'Tukua anō te URL'
+    ThemeFieldLabel: Kaupapa
+    TitleFieldLabel: 'Ingoa Pae Iti'

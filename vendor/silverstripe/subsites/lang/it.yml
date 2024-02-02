@@ -1,0 +1,87 @@
+it:
+  DomainNameField:
+    INVALID_DOMAIN: 'Nome a dominio non valido'
+  SilverStripe\CMS\Model\VirtualPage:
+    EDITCONTENT: 'Clicca qui per editare il contenuto'
+  SilverStripe\Subsites\Admin\SubsiteAdmin:
+    MENUTITLE: Sottositi
+  SilverStripe\Subsites\Extensions\FileSubsites:
+    has_one_Subsite: Sottosito
+  SilverStripe\Subsites\Extensions\FolderFormFactoryExtension:
+    AllSitesDropdownOpt: 'Tutti i siti'
+    SUBSITENOTICE: 'Le cartelle e i files creati nel sito principale sono accessibili da tutti i sottositi.'
+    SubsiteFieldLabel: Sottosito
+  SilverStripe\Subsites\Extensions\GroupSubsites:
+    ACCESSALL: 'Tutti i sottositi'
+    ACCESSONLY: 'Solo questi sottositi'
+    ACCESSRADIOTITLE: 'Dai a questo gruppo accesso a'
+    GlobalGroup: 'Gruppo globale'
+    MANAGE_SUBSITES: 'Gestisci sottositi per gruppi'
+    MANAGE_SUBSITES_HELP: 'Abilità di limitare i permessi per un gruppo di uno o più sottositi.'
+    SECURITYTABTITLE: Sottositi
+    many_many_Subsites: Sottositi
+  SilverStripe\Subsites\Extensions\LeftAndMainSubsites:
+    Saved: 'Salvato, si prega di aggiornare le pagine relative.'
+  SilverStripe\Subsites\Extensions\SiteConfigSubsites:
+    has_one_Subsite: Sottosito
+  SilverStripe\Subsites\Extensions\SiteTreeSubsites:
+    CopyAction: Copia
+    CopyToSubsite: 'Copia pagina in sottosito'
+    CopyToSubsiteWithChildren: 'Includi pagine figlie?'
+    SubsiteOperations: 'Operazioni sui sottositi'
+    has_one_Subsite: Sottosito
+  SilverStripe\Subsites\Model\Subsite:
+    ConfigurationTab: Configurazione
+    CopyMessage: 'Creata una copia di {title}'
+    CustomExtraMeta: 'Meta Tags personalizzati'
+    CustomMetaDescription: Descrizione
+    CustomMetaKeywords: Keywords
+    CustomMetaTitle: Titolo
+    PLURALNAME: Sottositi
+    PageTypeBlacklistField: 'Disabilita tipi di pagina?'
+    SINGULARNAME: Sottosito
+    SiteConfigSubtitle: 'Lo slogan qui'
+    SiteConfigTitle: 'Nome del sito'
+    ValidateTitle: 'Prego aggiungere il "Titolo"'
+    belongs_many_many_Groups: Gruppi
+    db_DefaultSite: 'Sito di default'
+    db_Language: Lingua
+    db_RedirectURL: 'URL di reindirizzamento'
+    db_Theme: Tema
+    db_Title: Titolo
+    has_many_Domains: Domini
+  SilverStripe\Subsites\Model\SubsiteDomain:
+    DOMAIN: Dominio
+    DOMAIN_DESCRIPTION: 'Nome host di questo sottosito (escluso il protocollo). Permette caratteri wildcard (*).'
+    ISPRIMARY_DESCRIPTION: 'Segna questo come il dominio di default per questo sottosito'
+    IS_PRIMARY: 'È il dominio primario?'
+    PLURALNAME: 'Domini del sottosito'
+    PROTOCOL_AUTOMATIC: Automatico
+    PROTOCOL_HTTP: 'http://'
+    PROTOCOL_HTTPS: 'https://'
+    Protocol: Protocollo
+    SINGULARNAME: 'Dominio del sottosito'
+    db_Domain: Dominio
+    db_Protocol: Protocollo
+    has_one_Subsite: Sottosito
+  SilverStripe\Subsites\Pages\SubsitesVirtualPage:
+    DESCRIPTION: 'Mostra il contenuto di una pagina appartenente ad un altro sottosito'
+    SINGULARNAME: 'Pagina virtuale dei sottositi'
+    SubsiteField: Sottosito
+  SilverStripe\Subsites\Reports\SubsiteReportWrapper:
+    ReportDropdown: Siti
+    ReportDropdownSubsite: Sottosito
+  Subsite:
+    COPYSTRUCTURE: 'Copia struttura da:'
+    NOTEMPLATE: 'Nessuno schema'
+  Subsites:
+    DefaultSiteFieldLabel: 'Sito di default'
+    DomainFieldLabel: Dominio
+    IsPublicFieldLabel: 'Permetti accesso pubblico'
+    LanguageFieldLabel: Lingua
+    MainSiteTitle: 'Sito principale'
+    PageTypeBlacklistFieldLabel: 'Blacklist dei tipi di pagina'
+    PrimaryDomainFieldLabel: 'Dominio primario'
+    RedirectURLFieldLabel: 'URL di reindirizzamento'
+    ThemeFieldLabel: Tema
+    TitleFieldLabel: 'Nome sottosito'

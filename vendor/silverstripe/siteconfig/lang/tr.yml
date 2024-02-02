@@ -1,0 +1,8 @@
+tr:
+  SilverStripe\SiteConfig\SiteConfig:
+    SITENAMEDEFAULT: 'Site Adınız'
+    SITETITLE: 'Site başlığı'
+    TABACCESS: Erişim
+    TABMAIN: Ana
+  SilverStripe\SiteConfig\SiteConfigLeftAndMain:
+    MENUTITLE: Ayarlar

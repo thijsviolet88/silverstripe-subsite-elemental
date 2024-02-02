@@ -1,0 +1,31 @@
+lt:
+  SilverStripe\Admin\FileStatusIcon:
+    ACCESS_RESTRICTED: 'Ribotas priėjimas'
+  SilverStripe\AssetAdmin\Controller\AssetAdmin:
+    ARCHIVE_BUTTON: Archyvas
+    AppCategoryArchive: Archyvas
+    BACKLINKCOUNT: 'Naudojama:'
+    HEIGHT: Aukštis
+    MENUTITLE: Bylos
+    PAGES: puslapis(-iai)
+    PUBLISHED: Publikuota
+    PUBLISH_BUTTON: Publikuoti
+    SIZE: 'Bylos dydis'
+    TYPE: 'Bylos tipas'
+    URL: 'URL adresas'
+    WIDTH: Plotis
+  SilverStripe\AssetAdmin\Forms\FileFormFactory:
+    PUBLISH: Publikuoti
+    PUBLISHED: Publikuota
+  SilverStripe\AssetAdmin\Forms\FileHistoryFormFactory:
+    PUBLISHED: Publikuota
+  SilverStripe\AssetAdmin\Forms\FolderFormFactory:
+    FOLDERNAME: 'Katalogo pavadinimas'
+  SilverStripe\AssetAdmin\Forms\MoveFormFactory:
+    MOVE: Perkelti
+  SilverStripe\AssetAdmin\Forms\UploadField:
+    Dimensions: Matmenys
+    EDIT: Redaguoti
+    EDITINFO: 'Redaguoti šią bylą'
+    FIELDNOTSET: 'Informacija apie bylą nerasta'
+    REMOVE: Pašalinti

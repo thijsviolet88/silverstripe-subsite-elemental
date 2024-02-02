@@ -1,0 +1,16 @@
+id:
+  SilverStripe\AssetAdmin\Controller\AssetAdmin:
+    BACKLINKCOUNT: 'Dipakai pada:'
+    MENUTITLE: Berkas
+    PAGES: laman
+    SIZE: 'Ukuran berkas'
+    TYPE: 'Jenis berkas'
+    URL: URL
+  SilverStripe\AssetAdmin\Forms\FolderFormFactory:
+    FOLDERNAME: 'Nama folder'
+  SilverStripe\AssetAdmin\Forms\UploadField:
+    Dimensions: Dimensi
+    EDIT: Edit
+    EDITINFO: 'Edit berkas ini'
+    FIELDNOTSET: 'Informasi berkas tidak ada'
+    REMOVE: Buang

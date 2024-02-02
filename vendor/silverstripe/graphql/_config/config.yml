@@ -1,0 +1,63 @@
+---
+Name: graphqlconfig
+---
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\GraphQL\QueryHandler\QueryHandlerInterface:
+    class: SilverStripe\GraphQL\QueryHandler\QueryHandler
+
+  SilverStripe\GraphQL\Middleware\QueryMiddleware.csrf:
+    class: SilverStripe\GraphQL\Middleware\CSRFMiddleware
+
+  SilverStripe\GraphQL\Middleware\QueryMiddleware.httpMethod:
+    class: SilverStripe\GraphQL\Middleware\HTTPMethodMiddleware
+
+  SilverStripe\GraphQL\PersistedQuery\PersistedQueryMappingProvider:
+    class: SilverStripe\GraphQL\PersistedQuery\JSONStringProvider
+
+  SilverStripe\GraphQL\PersistedQuery\RequestProcessor:
+    class: SilverStripe\GraphQL\PersistedQuery\RequestIDProcessor
+
+  SilverStripe\GraphQL\PersistedQuery\HTTPProvider:
+    constructor:
+      httpClient: '%$SilverStripe\GraphQL\PersistedQuery\GuzzleHTTPClient'
+
+  SilverStripe\GraphQL\Schema\Interfaces\SchemaStorageCreator:
+    class: 'SilverStripe\GraphQL\Schema\Storage\CodeGenerationStoreCreator'
+
+  SilverStripe\GraphQL\Schema\Storage\CodeGenerationStore:
+    properties:
+      rootDir: '`BASE_PATH`'
+
+  SilverStripe\GraphQL\Schema\SchemaBuilder:
+    constructor:
+      storeCreator: '%$SilverStripe\GraphQL\Schema\Interfaces\SchemaStorageCreator'
+
+  SilverStripe\GraphQL\Schema\Storage\NameObfuscator:
+    class: SilverStripe\GraphQL\Schema\Storage\HashNameObfuscator
+
+SilverStripe\GraphQL\Schema\Schema:
+  schemas: []
+---
+Only:
+  moduleexists: 'silverstripe/admin'
+---
+SilverStripe\Admin\LeftAndMain:
+  extensions:
+    - SilverStripe\GraphQL\Extensions\ClientConfigProvider
+---
+Only:
+  moduleexists: 'silverstripe/testsession'
+---
+SilverStripe\TestSession\TestSessionEnvironment:
+  extensions:
+    - SilverStripe\GraphQL\Extensions\TestSessionEnvironmentExtension
+
+
+---
+Name: graphqlconfig-debug
+Only:
+  envvarset: 'DEBUG_SCHEMA'
+---
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\GraphQL\Schema\Storage\NameObfuscator:
+    class: SilverStripe\GraphQL\Schema\Storage\NaiveNameObfuscator

@@ -1,0 +1,9 @@
+---
+Name: event-dispatcher-bootstrap
+---
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\EventDispatcher\Dispatch\Dispatcher:
+    constructor:
+      backend: '%$SilverStripe\EventDispatcher\Symfony\Backend'
+  SilverStripe\EventDispatcher\Event\EventContextInterface:
+    class: SilverStripe\EventDispatcher\Symfony\Event

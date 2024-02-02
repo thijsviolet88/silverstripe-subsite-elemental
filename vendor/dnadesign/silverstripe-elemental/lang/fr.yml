@@ -1,0 +1,47 @@
+fr:
+  DNADesign\Elemental\Forms\TextCheckboxGroupField:
+    DISPLAYED: Affiché
+    ShowTitleLabel: Affiché
+    Title: Titre
+    TitleLabel: 'Titre (affiché si coché)'
+  DNADesign\Elemental\Models\BaseElement:
+    BlockType: Bloc
+    CUSTOM_STYLES: 'Sélectionner un style..'
+    ExtraCssClassesLabel: 'Classes CSS personnalisées'
+    ExtraCssClassesPlaceholder: 'ma_classe autre_classe'
+    MainTabLabel: Contenu
+    PLURALNAME: blocs
+    PLURALS:
+      many: '{count} blocs'
+      one: 'Un bloc'
+      other: '{count} blocs'
+    SINGULARNAME: bloc
+    STYLE: 'Variation de style'
+    db_Title: Titre
+  DNADesign\Elemental\Models\ElementContent:
+    BlockType: Contenu
+    ContentLabel: Contenu
+    PLURALNAME: 'blocs contenu'
+    PLURALS:
+      many: '{count} blocs contenu'
+      one: 'Un bloc contenu'
+      other: '{count} blocs contenu'
+    SINGULARNAME: 'bloc contenu'
+  DNADesign\Elemental\Models\ElementalArea:
+    PLURALNAME: 'Elemental Areas'
+    PLURALS:
+      many: '{count} Elemental Areas'
+      one: 'An Elemental Area'
+      other: '{count} Elemental Areas'
+    SINGULARNAME: 'Elemental Area'
+  DNADesign\Elemental\Reports\ElementTypeReport:
+    Title: 'Types de blocs'
+    Total: Total
+    Type: 'Type de bloc'
+  DNADesign\Elemental\Reports\ElementsInUseReport:
+    None: Aucun
+    Page: Page
+    ReportTitle: 'Blocs utilisés'
+    Summary: Résumé
+    Title: Titre
+    Type: Type

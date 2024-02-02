@@ -1,0 +1,21 @@
+{
+    "HistoryViewer.Author": "المؤلف",
+    "HistoryViewer.BadgeLive": "مباشر",
+    "HistoryViewer.COMPARE_MODE": "وضعية المقارنة",
+    "HistoryViewer.EXIT": "خروج",
+    "HistoryViewer.NEXT": "التالي",
+    "HistoryViewer.PREVIOUS": "السابق",
+    "HistoryViewer.Published": "تم النشر",
+    "HistoryViewer.Record": "سجل",
+    "HistoryViewer.SELECT_PROMPT": "اختر نسختين",
+    "HistoryViewer.Saved": "تم الحفظ",
+    "HistoryViewerHeading.COMPARE_VERSIONS": "مقارنة نسختين",
+    "HistoryViewerToolbar.REVERTED_MESSAGE": "تم استرجاع النسخة %s",
+    "HistoryViewerToolbar.REVERT_TO_VERSION": "استرجاع هذه النسخة",
+    "HistoryViewerToolbar.REVERT_UNAVAILABLE": "غير متاح في النسخة الحالية",
+    "HistoryViewerVersion.CLOSE": "إغلاق",
+    "HistoryViewerVersion.COMPARE": "مقارنة",
+    "HistoryViewerVersion.GO_TO_VERSION": "اذهب إلى النسخة {version}",
+    "HistoryViewerVersion.SELECTED": "مختارة بالفعل",
+    "HistoryViewerVersionList.CLOSE": "إغلاق"
+}

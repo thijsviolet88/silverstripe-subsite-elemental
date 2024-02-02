@@ -1,0 +1,9 @@
+hu:
+  SilverStripe\AssetAdmin\Controller\AssetAdmin:
+    BACKLINKCOUNT: 'Felhasználva:'
+    MENUTITLE: Állományok
+    PAGES: oldal(ak)
+    SIZE: Méret
+    TYPE: Típus
+  SilverStripe\AssetAdmin\Forms\FolderFormFactory:
+    FOLDERNAME: 'Mappa neve'

@@ -1,0 +1,20 @@
+---
+Name: modelascontrollerroutes
+After: '#coreroutes'
+---
+SilverStripe\Control\Director:
+  rules:
+    '': 'SilverStripe\CMS\Controllers\RootURLController'
+---
+Name: legacycmsroutes
+---
+SilverStripe\Control\Director:
+  rules:
+    'admin/cms': '->admin/pages'
+---
+Name: modelascontrollercatchallroute
+After: '*'
+---
+SilverStripe\Control\Director:
+  rules:
+    '$URLSegment//$Action/$ID/$OtherID': 'SilverStripe\CMS\Controllers\ModelAsController'

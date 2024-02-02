@@ -1,0 +1,18 @@
+es:
+  SilverStripe\AssetAdmin\Controller\AssetAdmin:
+    BACKLINKCOUNT: 'Usado en:'
+    HEIGHT: Alto
+    MENUTITLE: Archivos
+    PAGES: página(s)
+    SIZE: Tamaño
+    TYPE: 'Tipo de archivo'
+    URL: URL
+    WIDTH: Ancho
+  SilverStripe\AssetAdmin\Forms\FolderFormFactory:
+    FOLDERNAME: 'Nombre de la carpeta'
+  SilverStripe\AssetAdmin\Forms\UploadField:
+    Dimensions: Dimensiones
+    EDIT: Editar
+    EDITINFO: 'Editar este archivo'
+    FIELDNOTSET: 'No ha sido encontrada la información del archivo'
+    REMOVE: Eliminar

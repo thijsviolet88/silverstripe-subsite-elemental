@@ -1,0 +1,11 @@
+---
+Name: graphqlassets
+Only:
+  moduleexists: 'silverstripe/assets'
+---
+SilverStripe\Assets\File:
+  allowed_extensions:
+    - graphql
+  app_categories:
+    document:
+      - graphql

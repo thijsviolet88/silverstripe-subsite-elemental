@@ -1,0 +1,62 @@
+---
+Name: 'graphql-schema-global'
+---
+SilverStripe\GraphQL\Schema\Schema:
+  schemas:
+    '*':
+      scalars:
+        JSONBlob:
+          serialiser: 'SilverStripe\GraphQL\Schema\Resolver\JSONResolver::serialise'
+          valueParser: 'SilverStripe\GraphQL\Schema\Resolver\JSONResolver::parseValue'
+          literalParser: 'SilverStripe\GraphQL\Schema\Resolver\JSONResolver::parseLiteral'
+      config:
+        max_query_depth: 15
+        max_query_nodes: 500
+        resolverStrategy: 'SilverStripe\GraphQL\Schema\Resolver\DefaultResolverStrategy::getResolverMethod'
+        defaultResolver: 'SilverStripe\GraphQL\Schema\Resolver\DefaultResolver::defaultFieldResolver'
+        modelCreators:
+          - 'SilverStripe\GraphQL\Schema\DataObject\ModelCreator'
+        defaultBulkLoad:
+          inheritanceLoader:
+            include:
+              - SilverStripe\ORM\DataObject
+        modelConfig:
+          DataObject:
+            type_formatter: 'SilverStripe\Core\ClassInfo::shortName'
+            type_prefix: ''
+            type_mapping: []
+            base_fields:
+              ID: ID!
+            plugins:
+              dbFieldArgs: true
+              dbFieldTypes:
+                ignore:
+                  className: true
+                before: scalarDBField
+              inheritance:
+                useUnionQueries: false
+                after: 'versioning'
+              scalarDBField:
+                after: dbFieldArgs
+              inheritedPlugins:
+                after: '*'
+            operations:
+              read:
+                class: 'SilverStripe\GraphQL\Schema\DataObject\ReadCreator'
+                plugins:
+                  paginateList: true
+                  canView:
+                    after: '*'
+              readOne:
+                class: 'SilverStripe\GraphQL\Schema\DataObject\ReadOneCreator'
+                plugins:
+                  firstResult:
+                    after: '*'
+                  canView:
+                    after: '*'
+              delete:
+                class: 'SilverStripe\GraphQL\Schema\DataObject\DeleteCreator'
+              update:
+                class: 'SilverStripe\GraphQL\Schema\DataObject\UpdateCreator'
+              create:
+                class: 'SilverStripe\GraphQL\Schema\DataObject\CreateCreator'

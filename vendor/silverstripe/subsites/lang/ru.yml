@@ -1,0 +1,87 @@
+ru:
+  DomainNameField:
+    INVALID_DOMAIN: 'Неверный домен'
+  SilverStripe\CMS\Model\VirtualPage:
+    EDITCONTENT: 'Нажмите для изменения содержимого'
+  SilverStripe\Subsites\Admin\SubsiteAdmin:
+    MENUTITLE: Подсайты
+  SilverStripe\Subsites\Extensions\FileSubsites:
+    has_one_Subsite: Подсайт
+  SilverStripe\Subsites\Extensions\FolderFormFactoryExtension:
+    AllSitesDropdownOpt: 'Все сайты'
+    SUBSITENOTICE: 'Папки и файлы созданные на основном сайте так же доступны для под-сайтов.'
+    SubsiteFieldLabel: Подсайт
+  SilverStripe\Subsites\Extensions\GroupSubsites:
+    ACCESSALL: 'Все подсайты'
+    ACCESSONLY: 'Только эти подсайты'
+    ACCESSRADIOTITLE: 'Разрешить этой группе доступ к'
+    GlobalGroup: 'глобальная группа'
+    MANAGE_SUBSITES: 'Управление подсайтами для групп'
+    MANAGE_SUBSITES_HELP: 'Возможность ограничить права доступа для группы к одному и более подсайтам'
+    SECURITYTABTITLE: Подсайты
+    many_many_Subsites: Подсайты
+  SilverStripe\Subsites\Extensions\LeftAndMainSubsites:
+    Saved: 'Сохранено, пожалуйста обновите связанные группы'
+  SilverStripe\Subsites\Extensions\SiteConfigSubsites:
+    has_one_Subsite: Подсайт
+  SilverStripe\Subsites\Extensions\SiteTreeSubsites:
+    CopyAction: Копировать
+    CopyToSubsite: 'Копировать страницу на подсайт'
+    CopyToSubsiteWithChildren: 'Включая под-страницы?'
+    SubsiteOperations: 'Операции над подсайтами'
+    has_one_Subsite: Подсайт
+  SilverStripe\Subsites\Model\Subsite:
+    ConfigurationTab: Конфигурация
+    CopyMessage: 'Создана копия {title}'
+    CustomExtraMeta: 'Пользовательские мета-тэги'
+    CustomMetaDescription: Описание
+    CustomMetaKeywords: 'Ключевые слова'
+    CustomMetaTitle: Заголовок
+    PLURALNAME: Подсайты
+    PageTypeBlacklistField: 'Запретить данные типы страниц?'
+    SINGULARNAME: Подсайт
+    SiteConfigSubtitle: 'ваш слоган здесь'
+    SiteConfigTitle: 'Название сайта'
+    ValidateTitle: 'Пожалуйста, добавьте "Заголовок"'
+    belongs_many_many_Groups: Группы
+    db_DefaultSite: 'Основной сайт'
+    db_Language: Язык
+    db_RedirectURL: 'Ссылка для перенаправления'
+    db_Theme: Оформление
+    db_Title: Заголовок
+    has_many_Domains: Домены
+  SilverStripe\Subsites\Model\SubsiteDomain:
+    DOMAIN: Домен
+    DOMAIN_DESCRIPTION: 'Домен подсайта (без указания протоколов: http:// и https://). Разрешены (*) для обозначения поддоменов.'
+    ISPRIMARY_DESCRIPTION: 'Отметить как основной домен для данного подсайта'
+    IS_PRIMARY: 'Это основной домен?'
+    PLURALNAME: 'Домены подсайтов'
+    PROTOCOL_AUTOMATIC: Автоматически
+    PROTOCOL_HTTP: 'http://'
+    PROTOCOL_HTTPS: 'https://'
+    Protocol: Протокол
+    SINGULARNAME: 'Домен подсайта'
+    db_Domain: Домен
+    db_Protocol: Протокол
+    has_one_Subsite: Подсайт
+  SilverStripe\Subsites\Pages\SubsitesVirtualPage:
+    DESCRIPTION: 'Отображает содержимое выбранной страницы на другом подсайте'
+    SINGULARNAME: 'Виртуальная страница подсайта'
+    SubsiteField: Подсайт
+  SilverStripe\Subsites\Reports\SubsiteReportWrapper:
+    ReportDropdown: Сайты
+    ReportDropdownSubsite: Подсайт
+  Subsite:
+    COPYSTRUCTURE: 'Скопировать структуры из:'
+    NOTEMPLATE: 'Нет шаблона'
+  Subsites:
+    DefaultSiteFieldLabel: 'Основной сайт'
+    DomainFieldLabel: Домен
+    IsPublicFieldLabel: 'Разрешить публичный доступ'
+    LanguageFieldLabel: Язык
+    MainSiteTitle: 'Основной Сайт'
+    PageTypeBlacklistFieldLabel: 'Запрещённые типы страниц'
+    PrimaryDomainFieldLabel: 'Основной Домен'
+    RedirectURLFieldLabel: 'Ссылка для перенаправления'
+    ThemeFieldLabel: Оформление
+    TitleFieldLabel: 'Название Подсайта'

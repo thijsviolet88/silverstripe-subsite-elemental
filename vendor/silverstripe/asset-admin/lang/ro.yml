@@ -1,0 +1,9 @@
+ro:
+  SilverStripe\AssetAdmin\Controller\AssetAdmin:
+    BACKLINKCOUNT: 'Folosit la'
+    MENUTITLE: Fişiere
+    PAGES: pagină(pagini)
+  SilverStripe\AssetAdmin\Forms\FolderFormFactory:
+    FOLDERNAME: 'Nume dosar'
+  SilverStripe\AssetAdmin\Forms\UploadField:
+    EDITINFO: 'Editeaza acest fisier'

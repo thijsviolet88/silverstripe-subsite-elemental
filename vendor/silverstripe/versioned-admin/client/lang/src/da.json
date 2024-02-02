@@ -1,0 +1,21 @@
+{
+    "HistoryViewer.Author": "Forfatter",
+    "HistoryViewer.BadgeLive": "Udgivet",
+    "HistoryViewer.COMPARE_MODE": "Sammenligningstilstand",
+    "HistoryViewer.EXIT": "Luk",
+    "HistoryViewer.NEXT": "Næste",
+    "HistoryViewer.PREVIOUS": "Forrige",
+    "HistoryViewer.Published": "Udgivet",
+    "HistoryViewer.Record": "Element",
+    "HistoryViewer.SELECT_PROMPT": "Vælg to versioner",
+    "HistoryViewer.Saved": "Gemt",
+    "HistoryViewerHeading.COMPARE_VERSIONS": "Sammenlign to versioner",
+    "HistoryViewerToolbar.REVERTED_MESSAGE": "Vendte succesfuldt tilbage til  %s",
+    "HistoryViewerToolbar.REVERT_TO_VERSION": "Vend tilbage til denne version",
+    "HistoryViewerToolbar.REVERT_UNAVAILABLE": "Utilgængelig for nuværende version",
+    "HistoryViewerVersion.CLOSE": "Luk",
+    "HistoryViewerVersion.COMPARE": "Sammenlign",
+    "HistoryViewerVersion.GO_TO_VERSION": "Gå til version {version}",
+    "HistoryViewerVersion.SELECTED": "Allerede valgt",
+    "HistoryViewerVersionList.CLOSE": "Luk"
+}

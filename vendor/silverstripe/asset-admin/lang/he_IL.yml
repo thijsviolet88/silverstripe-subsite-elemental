@@ -1,0 +1,8 @@
+he_IL:
+  SilverStripe\AssetAdmin\Controller\AssetAdmin:
+    BACKLINKCOUNT: 'נעשה שימוש בתאריך:'
+    MENUTITLE: קבצים
+    PAGES: עמוד/ים
+    SIZE: גודל
+    TYPE: סוג
+    URL: 'כתובת הדף'

@@ -1,0 +1,118 @@
+.elemental-edit {
+  display: flex;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.elemental-editor .col-EditorPreview {
+  padding-left: 0;
+}
+
+.elemental-preview__detail {
+  display: inline-block;
+  margin-left: $spacer-xs;
+  margin-top: 1px;
+
+  h3 {
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  p {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 6px;
+  }
+
+  small {
+    color: $text-muted;
+    font-size: $font-size-root;
+  }
+}
+
+.elemental-preview__thumbnail-image {
+  margin-right: $spacer-xs;
+
+  img {
+    border-radius: $border-radius-sm;
+  }
+}
+
+.elemental-preview__thumbnail-image--placeholder {
+  border-radius: 0;
+  height: 36px;
+  margin-left: -4px;
+}
+
+.elemental-preview__icon {
+  color: $text-muted;
+  display: inline-block;
+  flex-direction: row;
+  font-size: 2.3rem;
+  width: 28px;
+  vertical-align: top;
+  margin-top: -1px;
+}
+
+.ss-gridfield-orderable.elemental-editor .col-reorder .handle {
+  opacity: .5;
+  padding: 22px 0 0 0;
+
+  .icon {
+    font-size: 1.3em;
+  }
+}
+
+.elemental-editor {
+  .ss-gridfield-item:hover .handle {
+    opacity: 1;
+  }
+
+  .grid-field__table {
+    margin-bottom: 12px;
+
+    @include media-breakpoint-down(md) {
+      // If viewing on a smaller screen, ensure the element content summary is shown
+      .col-EditorPreview {
+        display: table-cell;
+      }
+    }
+  }
+}
+
+// Legacy - tweaks to put the version indicator in the right place for PHP
+// GridField rendering. Specificity is deliberate so it doesn't affect the React
+// elemental area editor
+.elemental-report__grid-field {
+  .element-editor-header__version-state {
+    bottom: 9px;
+    left: 14px;
+  }
+}
+
+// Stack fields - this is a global default for all Elemental Areas
+// doing it this way means people do not need to add 'stacked' as
+// an extra class to all PHP CMS field definitions, and passing that
+// through to React.
+// This also means the selector needs to be a smidge silly specific.
+.element-editor .form-group:nth-child(1n) {
+  display: block;
+
+  .form__field-label,
+  .form__field-holder {
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(10);
+      // To bring checkboxes and radio buttons into alignment
+      margin-left: 0;
+    }
+  }
+}

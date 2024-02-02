@@ -1,0 +1,21 @@
+{
+    "HistoryViewer.Author": "Auteur",
+    "HistoryViewer.BadgeLive": "Live",
+    "HistoryViewer.COMPARE_MODE": "Vergelijken",
+    "HistoryViewer.EXIT": "Exit",
+    "HistoryViewer.NEXT": "Volgende",
+    "HistoryViewer.PREVIOUS": "Vorige",
+    "HistoryViewer.Published": "Gepubliceerd ",
+    "HistoryViewer.Record": "Versie",
+    "HistoryViewer.SELECT_PROMPT": "Selecteer 2 versies",
+    "HistoryViewer.Saved": "Opgeslagen",
+    "HistoryViewerHeading.COMPARE_VERSIONS": "Vergelijk 2 versies",
+    "HistoryViewerToolbar.REVERTED_MESSAGE": "Succesvol teruggekeerd naar versie %s",
+    "HistoryViewerToolbar.REVERT_TO_VERSION": "Keer terug naar deze versie",
+    "HistoryViewerToolbar.REVERT_UNAVAILABLE": "Niet beschikbaar voor de huidige versie",
+    "HistoryViewerVersion.CLOSE": "Sluit",
+    "HistoryViewerVersion.COMPARE": "Vergelijk",
+    "HistoryViewerVersion.GO_TO_VERSION": "Ga naar versie {version}",
+    "HistoryViewerVersion.SELECTED": "Reeds geselecteerd",
+    "HistoryViewerVersionList.CLOSE": "Sluit"
+}

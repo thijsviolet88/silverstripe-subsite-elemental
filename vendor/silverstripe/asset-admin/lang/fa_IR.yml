@@ -1,0 +1,18 @@
+fa_IR:
+  SilverStripe\AssetAdmin\Controller\AssetAdmin:
+    BACKLINKCOUNT: 'استفاده شده در:'
+    HEIGHT: ارتفاع
+    MENUTITLE: فایل‌ها
+    PAGES: صفحه(ها)
+    SIZE: 'حجم فایل'
+    TYPE: 'نوع فایل'
+    URL: 'نشانی اینترنتی'
+    WIDTH: پهنا
+  SilverStripe\AssetAdmin\Forms\FolderFormFactory:
+    FOLDERNAME: 'نام پوشه'
+  SilverStripe\AssetAdmin\Forms\UploadField:
+    Dimensions: ابعاد
+    EDIT: ویرایش
+    EDITINFO: 'ویرایش این فایل'
+    FIELDNOTSET: 'اطلاعات فایل پیدا نشد'
+    REMOVE: حذف

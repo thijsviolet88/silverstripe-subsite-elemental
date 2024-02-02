@@ -1,0 +1,35 @@
+ru:
+  SilverStripe\Versioned\ChangeSet:
+    NAME: Имя
+    PLURALNAME: Кампании
+    PLURALS:
+      few: '{count} кампании'
+      many: '{count} кампаний'
+      one: Кампания
+      other: '{count} кампаний'
+    SINGULARNAME: Кампания
+    STATE: Состояние
+    db_Name: Имя
+    db_State: Состояние
+  SilverStripe\Versioned\ChangeSetItem:
+    PLURALNAME: 'Объекты набора изменений'
+    PLURALS:
+      few: '{count} объекта набора изменений'
+      many: '{count} объектов набора изменений'
+      one: 'Объект набора изменений'
+      other: '{count} объектов набора изменений'
+    SINGULARNAME: 'Объект набора изменений'
+  SilverStripe\Versioned\GridFieldArchiveAction:
+    Archive: Архив
+  SilverStripe\Versioned\RecursivePublishable:
+    INFERRED_TITLE: 'Сгенерировано автоматически при публикации ''{title}'' в {created}'
+  SilverStripe\Versioned\Versioned:
+    has_many_Versions: Версии
+  SilverStripe\Versioned\VersionedGridFieldItemRequest:
+    BUTTONARCHIVEDESC: 'Отменить публикацию и добавить в архив'
+    BUTTONSAVEPUBLISH: Опубликовать
+    BUTTONUNPUBLISH: 'Отменить публикацию'
+    BUTTONUNPUBLISHDESC: 'Удалить эту запись с сайта'
+    Published: 'Опубликовано {name} {link}'
+  SilverStripe\Versioned\VersionedHTTPMiddleware:
+    DRAFT_SITE_ACCESS_RESTRICTION: 'Вы должны войти в систему с помощью вашего пароля чтобы иметь возможность просматривать черновые или архивные страницы. Нажмите чтобы вернуться на опубликованный сайт.'

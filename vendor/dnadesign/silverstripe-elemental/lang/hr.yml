@@ -1,0 +1,35 @@
+hr:
+  DNADesign\Elemental\Forms\TextCheckboxGroupField:
+    DISPLAYED: Prikazano
+    ShowTitleLabel: Prikazano
+    Title: Naslov
+    TitleLabel: 'Naslov (vidljiv ako je odabran)'
+  DNADesign\Elemental\Models\BaseElement:
+    BlockType: Blok
+    CUSTOM_STYLES: 'Odaberi stil...'
+    ExtraCssClassesLabel: 'Dodatne CSS klase'
+    ExtraCssClassesPlaceholder: 'my_class another_class'
+    MainTabLabel: Sadržaj
+    PLURALNAME: blokovi
+    SINGULARNAME: blok
+    STYLE: 'Stil varijanta'
+    db_Title: Naslov
+  DNADesign\Elemental\Models\ElementContent:
+    BlockType: Sadržaj
+    ContentLabel: Sadržaj
+    PLURALNAME: 'sadržajni blokovi'
+    SINGULARNAME: 'sadržajni blok'
+  DNADesign\Elemental\Models\ElementalArea:
+    PLURALNAME: 'Elemental zone'
+    SINGULARNAME: 'Elemental zona'
+  DNADesign\Elemental\Reports\ElementTypeReport:
+    Title: 'Tipovi sadržajnih blokova'
+    Total: Ukupno
+    Type: 'Tip sadržaja'
+  DNADesign\Elemental\Reports\ElementsInUseReport:
+    None: Nijedan
+    Page: Stranica
+    ReportTitle: 'Sadržajni blokovi u uporabi'
+    Summary: Sažetak
+    Title: Naslov
+    Type: Tip

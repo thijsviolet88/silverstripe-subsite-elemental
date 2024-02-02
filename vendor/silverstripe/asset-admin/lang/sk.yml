@@ -1,0 +1,18 @@
+sk:
+  SilverStripe\AssetAdmin\Controller\AssetAdmin:
+    BACKLINKCOUNT: 'Použité na:'
+    HEIGHT: Výška
+    MENUTITLE: Súbory
+    PAGES: stránka(y)
+    SIZE: Veľkosť
+    TYPE: Typ
+    URL: URL
+    WIDTH: Šírka
+  SilverStripe\AssetAdmin\Forms\FolderFormFactory:
+    FOLDERNAME: 'Názov složky'
+  SilverStripe\AssetAdmin\Forms\UploadField:
+    Dimensions: Rozmery
+    EDIT: Editovať
+    EDITINFO: 'Editovať súbor'
+    FIELDNOTSET: 'Žiadna informácia o súbore'
+    REMOVE: Odstrániť
