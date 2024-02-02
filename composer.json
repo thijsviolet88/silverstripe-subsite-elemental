@@ -1,5 +1,5 @@
 {
-    "name": "violet/silverstripe-elemental-subsites",
+    "name": "thijs88/silverstripe-elemental-subsites",
     "description": "Adds subsite support to elements",
     "type": "silverstripe-vendormodule",
     "keywords": ["silverstripe", "element", "elemental", "content blocks", "subsites"],
